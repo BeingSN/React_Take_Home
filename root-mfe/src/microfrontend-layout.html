@@ -1,0 +1,28 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main>
+    <h1>Welcome</h1>
+    <!-- Add this heading -->
+    <route default>
+      <!-- embedding the items-microfrontend app into the root application(Microfrontend) -->
+      <application name="@code/items-mfe"></application>
+    </route>
+  </main>
+</single-spa-router>
